@@ -1,0 +1,77 @@
+.aText {
+  font-family: 'Times New Roman';
+  font-size: 16px;
+  text-anchor: middle;
+}
+
+
+.active {
+  font-weight: bold;
+  fill: #000;
+  transition: fill 0.6s ease-out;
+  font-family: 'Times New Roman';
+  text-anchor: middle;
+}
+
+.inactive {
+  font-weight: lighter;
+  fill: #dad7d7;
+  transition: fill 0.5s ease-out;
+  text-anchor: middle;
+  font-family: 'Times New Roman';
+}
+
+.inactive:hover {
+  fill: #000;
+  cursor: pointer;
+}
+
+/* font size dependent on radius, see app.js */
+.stateText {
+  font-family: 'Times New Roman';
+  fill: rgb(16, 30, 235);
+  text-anchor: middle;
+}
+
+.stateCircle {
+  fill: #8ebccf;
+  stroke: #311bf1;
+}
+
+.chart {
+  display: block;
+  margin: 0;
+}
+
+.d3-tip {
+  padding: 6px;
+  font-size: 12px;
+  line-height: 2;
+  line-height: 2.5em;
+  color: #fff;
+  text-align: center;
+  font-family: 'Times New Roman';
+  text-transform: capitalize;
+  background: rgba(22, 22, 22, 0.8);
+  border-radius: 3px;
+}
+
+/* Mobile Rules */
+@media screen and (max-width: 530px) {
+  .stateText {
+    display: none;
+  }
+
+  .aText {
+    font-size: 14px;
+    font-family: 'Times New Roman';
+   }
+}
+
+@media screen and (max-width: 400px) {
+  .aText {
+    font-size: 13px;
+    font-family: 'Times New Roman';
+    
+  }
+}
